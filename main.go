@@ -14,7 +14,12 @@ func main() {
 		fmt.Print("Risk: ")
 		var x float64
 		fmt.Scanln(&x)
-		fmt.Println("\n   ", riskInUsd/(x/100))
+		posusd := riskInUsd / (x / 100)
+		fmt.Print("price: ")
+		var price float64
+		fmt.Scanln(&price)
+		fmt.Println("\n   position size (usd): ", posusd)
+		fmt.Println("\n   position size: ", posusd/price, "\n ")
 
 	}
 }
